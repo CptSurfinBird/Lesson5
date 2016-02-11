@@ -20,12 +20,26 @@
 	console.log(paragraphData[5]);
 	console.log(paragraphData[6]);
 	*/
-	
-	// a little bit nicer
+
+	// a little bit nicer, counting up
 	var paragraphDataLength = paragraphData.length;
-	for(var index= 0; index < 7; index++ ) {
+	for(var index= 0; index < paragraphDataLength; index++ ) {
 		console.log(paragraphData[index]);
 	}
+
+
+	// a little nicer, counting down
+	/*
+	for(var index= paragraphData.length-1; index > -1; index--) {
+		console.log(paragraphData[index]);
+	}
+	*/
+
+	/* need to know how to use an annoymous function for a parameter
+	paragraphData.forEach(function(element) {
+		console.log(element);
+	});
+	*/
 
 	//declared a named function way
 
