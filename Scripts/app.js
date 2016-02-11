@@ -3,6 +3,8 @@
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
 
+	var paragraphData;
+
 	console.log("App Started..."); 
 
 
@@ -16,16 +18,6 @@
 
 		firstParagraph.innerHTML = "My New Paragraph Data";
 	}
-	
-	function replaceSecondParagraph() {
-		console.log("inside replaceSecondParagraph function");
-		var secondParagraph;
-		
-		secondParagraph = document.getElementById("secondParagraph");
-		
-		secondParagraph.innerHTML = "";
-	}
-
 
 	// declare an anonymous function with named alias
 	/*
