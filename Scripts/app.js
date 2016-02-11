@@ -3,10 +3,29 @@
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
 
-	var paragraphData;
+	var paragraphData = ["First Paragraph Stuff", "Second Pararaph Stuff", "Third Paragraph Stuff", "Fourth Paragraph Stuff"];
 
-	console.log("App Started..."); 
+	paragraphData[4] = "Fifth Paragraph Stuff";
+	paragraphData[5] = "Sixth Paragraph Stuff";
+	
+	paragraphData.push("Seventh Paragraph Stuff");
 
+	console.log("App Started...");
+
+	/* the fugly way
+	console.log(paragraphData[1]);
+	console.log(paragraphData[2]);
+	console.log(paragraphData[3]);
+	console.log(paragraphData[4]);
+	console.log(paragraphData[5]);
+	console.log(paragraphData[6]);
+	*/
+	
+	// a little bit nicer
+	var paragraphDataLength = paragraphData.length;
+	for(var index= 0; index < 7; index++ ) {
+		console.log(paragraphData[index]);
+	}
 
 	//declared a named function way
 
