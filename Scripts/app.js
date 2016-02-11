@@ -3,34 +3,35 @@
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
 
-    console.log("App Started..."); 
-  
-  
-    //declared a named function way
-    /*
-    function replaceFirstParagraph() {
-        console.log("inside replaceFirstParagraph function");
-        var firstParagraph;
+	console.log("App Started..."); 
 
-        firstParagraph = document.getElementById("firstParagraph");
 
-        firstParagraph.innerHTML = "My New Paragraph Data";
-    }
-    */
-    
-    // declare an anonymous function with named alias
-    var replaceFirstParagraph = function() {
-        console.log("inside replaceFirstParagraph anonymous function");
-        var firstParagraph;
+	//declared a named function way
 
-        firstParagraph = document.getElementById("firstParagraph");
+	function replaceFirstParagraph() {
+		console.log("inside replaceFirstParagraph function");
+		var firstParagraph;
 
-        firstParagraph.innerHTML = "My New Paragraph Data";
-    };
-    
-   
-    // call the replaceFirstParagraph function
-    replaceFirstParagraph();
+		firstParagraph = document.getElementById("firstParagraph");
+
+		firstParagraph.innerHTML = "My New Paragraph Data";
+	}
+
+
+	// declare an anonymous function with named alias
+	/*
+	var replaceFirstParagraph = function() {
+		console.log("inside replaceFirstParagraph anonymous function");
+		var firstParagraph;
+
+		firstParagraph = document.getElementById("firstParagraph");
+
+		firstParagraph.innerHTML = "My New Paragraph Data";
+	};
+	*/
+
+	// call the replaceFirstParagraph function
+	replaceFirstParagraph();
 
 
 })();
